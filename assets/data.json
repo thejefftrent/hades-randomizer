@@ -1,0 +1,346 @@
+{
+  "Weapons" : [
+    {
+      "name" : "Stygian Blade",
+      "alt_name" : "Stygius",
+      "img" : "Stygian_Blade.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    },
+    {
+      "name" : "Eternal Spear",
+      "alt_name" : "Varatha",
+      "img" : "Eternal_Spear.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    },
+    {
+      "name" : "Shield of Chaos",
+      "alt_name" : "Aegis",
+      "img" : "Shield_of_Chaos.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    },
+    {
+      "name" : "Heart-Seeker Bow",
+      "alt_name" : "Coronacht",
+      "img" : "Heart-Seeker_Bow.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    },
+    {
+      "name" : "Twin Fists of Malphon",
+      "alt_name" : "Malphon",
+      "img" : "Twin_Fists.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    },
+    {
+      "name" : "Adamant Rail",
+      "alt_name" : "Exagryph",
+      "img" : "Adamant_Rail.png",
+      "aspects" : [
+        {
+          "name" : "Aspect of Zagreus",
+          "img" : "Zagreus_Aspect_Sword.png"
+        },
+        {
+          "name" : "Aspect of Nemesis",
+          "img" : "Nemesis_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Poseidon",
+          "img" : "Poseidon_Aspect.png"
+        },
+        {
+          "name" : "Aspect of Arthur",
+          "img" : "Arthur_Aspect.png"
+        }
+      ]
+    }
+  ],
+  "Keepsakes" : [
+    {
+      "name" : "Old Spiked Collar",
+      "img" : "Old_Spiked_Collar.png"
+    },
+    {
+      "name" : "Myrmidon Bracer",
+      "img" : "Myrmidon_Bracer.png"
+    },
+    {
+      "name" : "Black Shawl",
+      "img" : "Black_Shawl.png"
+    },
+    {
+      "name" : "Pierced Butterfly",
+      "img" : "Pierced_Butterfly.png"
+    },
+    {
+      "name" : "Bone Hourglass",
+      "img" : "Bone_Hourglass.png"
+    },
+    {
+      "name" : "Chthonic Coin Purse",
+      "img" : "Chthonic_Coin_Purse.png"
+    },
+    {
+      "name" : "Skull Earring",
+      "img" : "Skull_Earring.png"
+    },
+    {
+      "name" : "Distant Memory",
+      "img" : "Distant_Memory.png"
+    },
+    {
+      "name" : "Harpy Feather Duster",
+      "img" : "Harpy_Feather_Duster.png"
+    },
+    {
+      "name" : "Lucky Tooth",
+      "img" : "Lucky_Tooth.png"
+    },
+    {
+      "name" : "Thunder Signet",
+      "img" : "Thunder_Signet.png"
+    },
+    {
+      "name" : "Conch Shell",
+      "img" : "Conch_Shell.png"
+    },
+    {
+      "name" : "Owl Pendant",
+      "img" : "Owl_Pendant.png"
+    },
+    {
+      "name" : "Eternal Rose",
+      "img" : "Eternal_Rose.png"
+    },
+    {
+      "name" : "Blood-filled Vial",
+      "img" : "Blood-Filled_Vial.png"
+    },
+    {
+      "name" : "Adamant Arrowhead",
+      "img" : "Adamant_Arrowhead.png"
+    },
+    {
+      "name" : "Overflowing Cup",
+      "img" : "Overflowing_Cup.png"
+    },
+    {
+      "name" : "Lambent Plume",
+      "img" : "Lambent_Plume.png"
+    },
+    {
+      "name" : "Frostbitten Horn",
+      "img" : "Frostbitten_Horn.png"
+    },
+    {
+      "name" : "Cosmic Egg",
+      "img" : "Cosmic_Egg.png"
+    },
+    {
+      "name" : "Shattered Shackle",
+      "img" : "Shattered_Shackle.png"
+    },
+    {
+      "name" : "Evergreen Acorn",
+      "img" : "Evergreen_Acorn.png"
+    },
+    {
+      "name" : "Broken Spearpoint",
+      "img" : "Broken_Spearpoint.png"
+    },
+    {
+      "name" : "Pom Blossom",
+      "img" : "Pom_Blossom.png"
+    },
+    {
+      "name" : "Sigil of the Dead",
+      "img" : "Sigil_of_the_Dead.png"
+    }
+  ],
+  "Companions" : [
+    {
+      "name" : "Battie",
+      "img" : "Battie.png"
+    },
+    {
+      "name" : "Mort",
+      "img" : "Mort.png"
+    },
+    {
+      "name" : "Rib",
+      "img" : "Rib.png"
+    },
+    {
+      "name" : "Shady",
+      "img" : "Shady.png"
+    },
+    {
+      "name" : "Fidi",
+      "img" : "Fidi.png"
+    },
+    {
+      "name" : "Antos",
+      "img" : "Antos.png"
+    }
+  ],
+  "Pact of Punishment" : [
+    {
+      "name" : "Hard Labor",
+      "cost" : [1,1,1,1,1]
+    },
+    {
+      "name" : "Lasting Consequences",
+      "cost" : [1,1,1,1]
+    },
+    {
+      "name" : "Convenience Fee",
+      "cost" : [1,1]
+    },
+    {
+      "name" : "Jury Summons",
+      "cost" : [1,1,1]
+    },
+    {
+      "name" : "Extreme Measures",
+      "cost" : [1,2,3,4]
+    },
+    {
+      "name" : "Calisthenics Program",
+      "cost" : [1,1]
+    },
+    {
+      "name" : "Benefits Package",
+      "cost" : [2,3]
+    },
+    {
+      "name" : "Middle Management",
+      "cost" : [2]
+    },
+    {
+      "name" : "Underworld Customs",
+      "cost" : [2]
+    },
+    {
+      "name" : "Forced Overtime",
+      "cost" : [2,2,2]
+    },
+    {
+      "name" : "Heightened Security",
+      "cost" : [1]
+    },
+    {
+      "name" : "Routine Inspection",
+      "cost" : [2,2,2,2]
+    },
+    {
+      "name" : "Damage Control",
+      "cost" : [1,1]
+    },
+    {
+      "name" : "Approval Process",
+      "cost" : [2,3]
+    },
+    {
+      "name" : "Tight Deadline",
+      "cost" : [1,2,3]
+    }
+  ],
+  "Mirror" : [
+    ["Shadow Presence", "Fiery Presence"],
+    ["Chthonic Vitality", "Dark Regeneration"],
+    ["Death Defiance", "Stubborn Defiance"],
+    ["Greater Reflex", "Ruthless Reflex"],
+    ["Boiling Blood", "Abyssal Blood"],
+    ["Infernal Soul", "Stygian Soul"],
+    ["Deep Pockets", "Golden Touch"],
+    ["Thick Skin", "High Confidence"],
+    ["Privileged Status", "Family Favorite"],
+    ["Olympian Favor", "Dark Foresight"],
+    ["Gods' Pride", "Gods' Legacy"],
+    ["Fated Authority", "Fated Persuasion"]
+  ]
+}

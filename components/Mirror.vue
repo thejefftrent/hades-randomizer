@@ -3,8 +3,12 @@
 </template>
 
 <script>
+import hades from "~/assets/data.json"
 export default {
-name: "Mirror"
+name: "Mirror",
+  props : {
+
+  }
 }
 </script>
 

@@ -6,7 +6,8 @@
       </h1>
       <Weapon />
       <Aspect />
-      <MirrorItem v-bind:color="m.color" v-for="m in mirrorRolls"> </MirrorItem>
+<!--      <Mirror v-bind:mirror-items="mirrorRolls" />-->
+<!--      <MirrorItem v-bind:color="m.color" v-for="m in mirrorRolls"> </MirrorItem>-->
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -29,16 +30,17 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import Weapon from "~/components/Weapon.vue";
 import Aspect from "~/components/Aspect.vue";
 import MirrorItem from "~/components/MirrorItem.vue";
 import hades from "~/assets/data.json";
 import {getRandomInt} from "~/assets/helper";
+import Mirror from "~/components/Mirror.vue";
 
 export default Vue.extend({
-  components: {MirrorItem, Aspect, Weapon},
+  components: {Mirror, MirrorItem, Aspect, Weapon},
   data () {
     let mirrorRolls = hades.Mirror.map(x => {
       let flip = getRandomInt(0, 2);

@@ -1,5 +1,6 @@
 <template>
   <div :class="'mirror-item ' + this.color">
+    <p>{{this.name}}</p>
   </div>
 </template>
 

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p>{{mirrorItems}}</p>
-<!--    <MirrorItem v-for="m in mirrorItems" :key="mirrorItems.name"> </MirrorItem>-->
+    <MirrorItem v-bind:color="m.color" v-bind:name="m.name" v-for="m in mirrorItems" :key="mirrorItems"> </MirrorItem>
   </div>
 </template>
 
@@ -10,7 +9,7 @@ import hades from "~/assets/data.json"
 export default {
 name: "Mirror",
   props : {
-    mirrorItems: [{color: 'm-green',name: "testing"}]
+    mirrorItems: Array
   },
   data () {
     return {

@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <img :alt="`${alt_text}`" :src="require(`~/assets/Weapons/Aspects/${image}`)" style="height: 100px; width: 100px; object-fit: scale-down;"/>
-    <p>{{alt_text}}</p>
+  <div class="aspect-block">
+    <img class="aspect-img" :alt="`${aspectName}`" :src="require(`~/assets/Weapons/Aspects/${aspectImg}`)"/>
+    <p>{{aspectName}}</p>
   </div>
 
 </template>
@@ -11,13 +11,16 @@ import hades from '~/assets/data.json';
 import {getRandomInt} from "~/assets/helper.js";
 export default {
   name: "Aspect",
+  props: {
+    weaponIndex: Number,
+    aspectIndex: Number
+  },
   data () {
-    let i = getRandomInt(0, hades.Weapons.length)
-    let aspect = hades.Weapons[i].aspects[getRandomInt(0,hades.Weapons[i].aspects.length)];
     return {
-      weaponIndex: i,
-      image : aspect.img,
-      alt_text : aspect.name
+      weaponIndex: this.weaponIndex,
+      aspectIndex: this.aspectIndex,
+      aspectName: hades.Weapons[this.weaponIndex].aspects[this.aspectIndex].name,
+      aspectImg: hades.Weapons[this.weaponIndex].aspects[this.aspectIndex].img
     }
   },
   methods : {
@@ -32,5 +35,13 @@ export default {
 </script>
 
 <style scoped>
-
+.aspect-img {
+  height: 100px;
+  width: 100px;
+  object-fit: scale-down;
+}
+.aspect-block {
+  display: inline-block;
+  float: bottom;
+}
 </style>

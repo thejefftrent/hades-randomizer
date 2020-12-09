@@ -4,34 +4,15 @@
       <h1 class="title">
         Hades Randomizer
       </h1>
-      <Weapon />
-      <Aspect />
-<!--      <Mirror v-bind:mirror-items="mirrorRolls" />-->
-<!--      <MirrorItem v-bind:color="m.color" v-for="m in mirrorRolls"> </MirrorItem>-->
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <Weapon v-bind:aspectIndex="weaponRolls.aspectIndex" v-bind:weaponIndex="weaponRolls.weaponIndex" />
+      <Mirror v-bind:mirror-items="mirrorRolls" />
+
     </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from 'vue';
 import Weapon from "~/components/Weapon.vue";
 import Aspect from "~/components/Aspect.vue";
 import MirrorItem from "~/components/MirrorItem.vue";
@@ -42,6 +23,7 @@ import Mirror from "~/components/Mirror.vue";
 export default Vue.extend({
   components: {Mirror, MirrorItem, Aspect, Weapon},
   data () {
+    //determine mirrorRolls
     let mirrorRolls = hades.Mirror.map(x => {
       let flip = getRandomInt(0, 2);
       return {
@@ -49,9 +31,21 @@ export default Vue.extend({
         name: x[flip]
       };
     });
-    return {
-      mirrorRolls : mirrorRolls
+
+    // Get Weapon Rolls
+    let weaponRolls = {
+      weaponIndex : getRandomInt(0, hades.Weapons.length),
+      aspectIndex : getRandomInt(0, 4), //there are always 4 aspects
     }
+    return {
+      mirrorRolls : mirrorRolls,
+      weaponRolls : weaponRolls
+    }
+  },
+  methods : {
+    getMirrorRolls : function () {
+
+    },
   }
 })
 </script>

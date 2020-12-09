@@ -1,6 +1,6 @@
 <template>
   <div :class="'mirror-item ' + this.color">
-    <p>{{this.name}}</p>
+    <p class="mirror-item-text">{{this.name}}</p>
   </div>
 </template>
 
@@ -27,10 +27,17 @@ name: "MirrorItem",
   display: inline-block;
 }
 
+.mirror-item-text {
+  transform: rotate(90deg);
+  visibility: hidden;
+}
+
 .m-orange {
   background-color: darkorange;
+  border: saddlebrown 1px solid;
 }
 .m-green {
   background-color: darkolivegreen;
+  border: darkslategrey 1px solid;
 }
 </style>

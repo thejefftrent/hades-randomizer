@@ -1,11 +1,9 @@
 <template>
   <div>
-    <img :alt="`${alt_text}`" :src="require(`~/assets/Weapons/${image}`)" style="height: 416px; width: 288px; object-fit: none;"/>
-    <br>
-    <p>{{alt_text}}</p>
-    <br>
-    <aspect></aspect>
-    <b-button size="sm" v-on:click="randomize(); ">randomize</b-button>
+    <img class="weapon-img" :alt="`${weaponName}`" :src="require(`~/assets/Weapons/${weaponImg}`)" />
+    <aspect v-bind:weaponIndex="weaponIndex" v-bind:aspectIndex="aspectIndex"></aspect>
+    <p>{{weaponName}}</p>
+<!--    <b-button size="sm" v-on:click="randomize(); ">randomize</b-button>-->
   </div>
 </template>
 
@@ -17,20 +15,21 @@ import Aspect from "~/components/Aspect";
 export default {
   name: "Weapon",
   components: {Aspect},
-  props: ['weapon'],
+  props: {
+    weaponIndex: Number,
+    aspectIndex: Number
+  },
   data () {
-    let i = getRandomInt(0,hades.Weapons.length - 1);
-    let weapon = hades.Weapons[i];
-
     return {
-      componentKey: 0,
-      image: weapon.img,
-      alt_text : weapon.name + ", "  + weapon.alt_name
+      weaponIndex: this.weaponIndex,
+      aspectIndex: this.aspectIndex,
+      weaponImg: hades.Weapons[this.weaponIndex].img,
+      weaponName: hades.Weapons[this.weaponIndex].name
     }
   },
   methods : {
     randomize : function (event) {
-      let i = getRandomInt(0, hades.Weapons.length - 1)
+      let i = getRandomInt(0, hades.Weapons.length)
       let weapon = hades.Weapons[i];
       this.image = weapon.img;
       this.alt_text = weapon.name + ", "  + weapon.alt_name;
@@ -46,5 +45,10 @@ export default {
 </script>
 
 <style scoped>
-
+.weapon-img {
+  height: 416px;
+  width: 288px;
+  object-fit: none;
+  display: inline-block;
+}
 </style>

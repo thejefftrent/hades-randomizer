@@ -30,19 +30,19 @@
       "aspects" : [
         {
           "name" : "Aspect of Zagreus",
-          "img" : "Zagreus_Aspect_Sword.png"
+          "img" : "Zagreus_Aspect_Spear.png"
         },
         {
-          "name" : "Aspect of Nemesis",
-          "img" : "Nemesis_Aspect.png"
+          "name" : "Aspect of Achilles",
+          "img" : "Achilles_Aspect.png"
         },
         {
-          "name" : "Aspect of Poseidon",
-          "img" : "Poseidon_Aspect.png"
+          "name" : "Aspect of Hades",
+          "img" : "Hades_Aspect.png"
         },
         {
-          "name" : "Aspect of Arthur",
-          "img" : "Arthur_Aspect.png"
+          "name" : "Aspect of Guan Yu",
+          "img" : "Guan_Yu_Aspect.png"
         }
       ]
     },
@@ -53,19 +53,19 @@
       "aspects" : [
         {
           "name" : "Aspect of Zagreus",
-          "img" : "Zagreus_Aspect_Sword.png"
+          "img" : "Zagreus_Aspect_Shield.png"
         },
         {
-          "name" : "Aspect of Nemesis",
-          "img" : "Nemesis_Aspect.png"
+          "name" : "Aspect of Chaos",
+          "img" : "Chaos_Aspect.png"
         },
         {
-          "name" : "Aspect of Poseidon",
-          "img" : "Poseidon_Aspect.png"
+          "name" : "Aspect of Zeus",
+          "img" : "Zeus_Aspect.png"
         },
         {
-          "name" : "Aspect of Arthur",
-          "img" : "Arthur_Aspect.png"
+          "name" : "Aspect of Beowulf",
+          "img" : "Shield_aspect_beuwulf.png"
         }
       ]
     },
@@ -76,19 +76,19 @@
       "aspects" : [
         {
           "name" : "Aspect of Zagreus",
-          "img" : "Zagreus_Aspect_Sword.png"
+          "img" : "Zagreus_Aspect_Bow.png"
         },
         {
-          "name" : "Aspect of Nemesis",
-          "img" : "Nemesis_Aspect.png"
+          "name" : "Aspect of Chiron",
+          "img" : "Chiron_Aspect.png"
         },
         {
-          "name" : "Aspect of Poseidon",
-          "img" : "Poseidon_Aspect.png"
+          "name" : "Aspect of Hera",
+          "img" : "Hera_Aspect.png"
         },
         {
-          "name" : "Aspect of Arthur",
-          "img" : "Arthur_Aspect.png"
+          "name" : "Aspect of Rama",
+          "img" : "Rama_aspect.png"
         }
       ]
     },
@@ -99,19 +99,19 @@
       "aspects" : [
         {
           "name" : "Aspect of Zagreus",
-          "img" : "Zagreus_Aspect_Sword.png"
+          "img" : "Zagreus_Aspect_Fists.png"
         },
         {
-          "name" : "Aspect of Nemesis",
-          "img" : "Nemesis_Aspect.png"
+          "name" : "Aspect of Talos",
+          "img" : "Talos_Aspect.png"
         },
         {
-          "name" : "Aspect of Poseidon",
-          "img" : "Poseidon_Aspect.png"
+          "name" : "Aspect of Demeter",
+          "img" : "Demeter_Aspect.png"
         },
         {
-          "name" : "Aspect of Arthur",
-          "img" : "Arthur_Aspect.png"
+          "name" : "Aspect of Gilgamesh",
+          "img" : "Gilgamesh_Aspect.png"
         }
       ]
     },
@@ -122,19 +122,19 @@
       "aspects" : [
         {
           "name" : "Aspect of Zagreus",
-          "img" : "Zagreus_Aspect_Sword.png"
+          "img" : "Zagreus_Rail_Image.png"
         },
         {
-          "name" : "Aspect of Nemesis",
-          "img" : "Nemesis_Aspect.png"
+          "name" : "Aspect of Eris",
+          "img" : "Eris_Aspect.png"
         },
         {
-          "name" : "Aspect of Poseidon",
-          "img" : "Poseidon_Aspect.png"
+          "name" : "Aspect of Hestia",
+          "img" : "Hestia_Aspect_Image.png"
         },
         {
-          "name" : "Aspect of Arthur",
-          "img" : "Arthur_Aspect.png"
+          "name" : "Aspect of Lucifer",
+          "img" : "Lycifer_aspect.png"
         }
       ]
     }

@@ -4,9 +4,9 @@
       <h1 class="title">
         Hades Randomizer
       </h1>
-      <Weapon v-bind:aspectIndex="weaponRolls.aspectIndex" v-bind:weaponIndex="weaponRolls.weaponIndex" />
+      <b-button size="sm" v-on:click="randomize(); ">randomize</b-button>
+      <Weapon v-bind:aspectIndex="aspectIndex" v-bind:weaponIndex="weaponIndex" />
       <Mirror v-bind:mirror-items="mirrorRolls" />
-
     </div>
   </div>
 </template>
@@ -23,29 +23,34 @@ import Mirror from "~/components/Mirror.vue";
 export default Vue.extend({
   components: {Mirror, MirrorItem, Aspect, Weapon},
   data () {
-    //determine mirrorRolls
-    let mirrorRolls = hades.Mirror.map(x => {
-      let flip = getRandomInt(0, 2);
-      return {
-        color: flip ? 'm-green' : 'm-orange',
-        name: x[flip]
-      };
-    });
-
-    // Get Weapon Rolls
-    let weaponRolls = {
-      weaponIndex : getRandomInt(0, hades.Weapons.length),
-      aspectIndex : getRandomInt(0, 4), //there are always 4 aspects
-    }
     return {
-      mirrorRolls : mirrorRolls,
-      weaponRolls : weaponRolls
+      mirrorRolls : this.getMirrorRolls(),
+      weaponIndex : this.getWeaponRolls().weaponIndex,
+      aspectIndex : this.getWeaponRolls().aspectIndex
     }
   },
   methods : {
-    getMirrorRolls : function () {
-
+    getWeaponRolls : function () {
+      return {
+        weaponIndex : getRandomInt(0, hades.Weapons.length),
+        aspectIndex : getRandomInt(0, 4), //there are always 4 aspects
+      }
     },
+    getMirrorRolls : function () {
+      return hades.Mirror.map(x => {
+        let flip = getRandomInt(0, 2);
+        return {
+          color: flip ? 'm-green' : 'm-orange',
+          name: x[flip]
+        };
+      });
+    },
+    randomize : function() {
+      this.mirrorRolls = this.getMirrorRolls();
+      let weaponRolls = this.getWeaponRolls();
+      this.weaponIndex = weaponRolls.weaponIndex;
+      this.aspectIndex = weaponRolls.aspectIndex;
+    }
   }
 })
 </script>

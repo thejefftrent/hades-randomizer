@@ -30,6 +30,23 @@ export default {
       this.image = aspect.img;
       this.alt_text = aspect.name;
     }
+  },
+  watch: {
+    weaponIndex:  {
+      immediate: true,
+      handler (newVal, oldVal) {
+        this.aspectName = hades.Weapons[newVal].aspects[this.aspectIndex].name;
+          this.aspectImg = hades.Weapons[newVal].aspects[this.aspectIndex].img;
+      }
+    },
+    aspectIndex:  {
+      immediate: true,
+      handler (newVal, oldVal) {
+        this.aspectName = hades.Weapons[this.weaponIndex].aspects[newVal].name;
+        this.aspectImg = hades.Weapons[this.weaponIndex].aspects[newVal].img;
+      }
+    },
+
   }
 }
 </script>

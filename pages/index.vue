@@ -6,9 +6,9 @@
       </h1>
       <b-button size="sm" v-on:click="randomize(); ">randomize</b-button>
       <Weapon v-bind:aspectIndex="aspectIndex" v-bind:weaponIndex="weaponIndex" />
+      <Items v-bind:item-rolls="itemRolls"/>
       <Mirror v-bind:mirror-items="mirrorRolls" />
       <Heat v-bind:heat-items="heatRolls" v-on:change-budget="updateHeat($event)"/>
-
     </div>
   </div>
 </template>
@@ -22,16 +22,18 @@ import hades from "~/assets/data.json";
 import {getRandomInt} from "~/assets/helper";
 import Mirror from "~/components/Mirror.vue";
 import Heat from "@/components/Heat";
+import Items from "@/components/Items";
 
 export default Vue.extend({
-  components: {Heat, Mirror, MirrorItem, Aspect, Weapon},
+  components: {Items, Heat, Mirror, MirrorItem, Aspect, Weapon},
   data () {
     return {
       mirrorRolls : this.getMirrorRolls(),
       weaponIndex : this.getWeaponRolls().weaponIndex,
       aspectIndex : this.getWeaponRolls().aspectIndex,
       heatBudget : 20,
-      heatRolls : this.getHeatRolls(this.heatBudget)
+      heatRolls : this.getHeatRolls(this.heatBudget),
+      itemRolls : this.getItemRolls()
     }
   },
   methods : {
@@ -70,7 +72,6 @@ export default Vue.extend({
           break;
         }
       }
-
       return heat;
     },
     randomize : function() {
@@ -79,10 +80,30 @@ export default Vue.extend({
       this.weaponIndex = weaponRolls.weaponIndex;
       this.aspectIndex = weaponRolls.aspectIndex;
       this.heatRolls = this.getHeatRolls(this.heatBudget);
+      this.itemRolls = this.getItemRolls();
     },
     updateHeat : function(heatBudget) {
       this.heatBudget = heatBudget;
       this.heatRolls = this.getHeatRolls(heatBudget);
+    },
+    getItemRolls : function () {
+      let rolls = {
+        companion : {
+          companionName : "",
+          companionImg : ""
+        },
+        keepsakes : []
+      };
+      let companion = hades.Companions[getRandomInt(0,hades.Companions.length)];
+      rolls.companion.companionName = companion.name;
+      rolls.companion.companionImg = companion.img;
+      // let keepsakes = JSON.parse(JSON.stringify(hades.Keepsakes));
+      let keepsakes = [...hades.Keepsakes]
+      for (let i = 0; i < 4; i++) {
+        let randomKeepsake = keepsakes.splice(getRandomInt(0,keepsakes.length),1)[0];
+        rolls.keepsakes.push(randomKeepsake);
+      }
+      return rolls;
     }
   }
 })

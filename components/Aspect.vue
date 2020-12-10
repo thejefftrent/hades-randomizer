@@ -17,8 +17,6 @@ export default {
   },
   data () {
     return {
-      weaponIndex: this.weaponIndex,
-      aspectIndex: this.aspectIndex,
       aspectName: hades.Weapons[this.weaponIndex].aspects[this.aspectIndex].name,
       aspectImg: hades.Weapons[this.weaponIndex].aspects[this.aspectIndex].img
     }

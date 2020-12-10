@@ -20,8 +20,6 @@ export default {
   },
   data() {
     return {
-      weaponIndex: this.weaponIndex,
-      aspectIndex: this.aspectIndex,
       weaponImg: hades.Weapons[this.weaponIndex].img,
       weaponName: `${hades.Weapons[this.weaponIndex].alt_name}, ${hades.Weapons[this.weaponIndex].name}`
     }

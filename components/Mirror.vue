@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Mirror</h3>
-    <MirrorItem v-bind:color="m.color" v-bind:name="m.name" v-for="m in mirrorItems" :key="mirrorItems"> </MirrorItem>
+    <MirrorItem v-bind:color="m.color" v-bind:name="m.name" v-for="m in mirrorItems" :key="mirrorItems.name"> </MirrorItem>
   </div>
 </template>
 
@@ -14,7 +14,6 @@ name: "Mirror",
   },
   data () {
     return {
-      mirrorItems: this.mirrorItems,
     }
   }
 }

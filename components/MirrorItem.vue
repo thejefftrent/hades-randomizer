@@ -1,6 +1,6 @@
 <template>
   <div :class="'mirror-item ' + this.color">
-    <p class="mirror-item-text">{{this.name}}</p>
+    <p class="mirror-item-text">{{ this.itemName }}</p>
   </div>
 </template>
 
@@ -8,13 +8,11 @@
 export default {
 name: "MirrorItem",
   props : {
-  name : "",
+  itemName : "",
     color : ""
   },
   data () {
   return {
-    name : "",
-    color : "m-orange"
   }
   }
 }

@@ -27,13 +27,54 @@ import Items from "@/components/Items";
 export default Vue.extend({
   components: {Items, Heat, Mirror, MirrorItem, Aspect, Weapon},
   data () {
+    let defaultRandomizerSettings = {
+      weapon: {
+        active: true,
+        locked: false,
+      },
+      aspect: {
+        active: true,
+        locked: false
+      },
+      companion: {
+        active: true,
+        locked: false
+      },
+      keepsakes: {
+        keepsake0: {
+          active: true,
+          locked: false
+        },
+        keepsake1: {
+          active: true,
+          locked: false
+        },
+        keepsake2: {
+          active: true,
+          locked: false
+        },
+        keepsake3: {
+          active: true,
+          locked: false
+        }
+      },
+      mirror: {
+        active: true,
+        locked: false
+      },
+      heat: {
+        active: true,
+        locked: false
+      }
+    }
     return {
       mirrorRolls : this.getMirrorRolls(),
       weaponIndex : this.getWeaponRolls().weaponIndex,
       aspectIndex : this.getWeaponRolls().aspectIndex,
       heatBudget : 20,
       heatRolls : this.getHeatRolls(this.heatBudget),
-      itemRolls : this.getItemRolls()
+      itemRolls : this.getItemRolls(),
+      randomizerSettings : defaultRandomizerSettings
     }
   },
   methods : {

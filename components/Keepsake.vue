@@ -1,6 +1,6 @@
 <template>
 <div style="display: inline-block">
-  <img  :alt="`${keepsakeName}`" :src="require(`~/assets/Keepsakes/${keepsakeImg}`)"/>
+  <img class="keepsake-img"  :alt="`${keepsakeName}`" :src="require(`~/assets/Keepsakes/${keepsakeImg}`)"/>
   <p>{{keepsakeName}}</p>
 </div>
 </template>
@@ -16,5 +16,10 @@ name: "Keepsake",
 </script>
 
 <style scoped>
-
+.keepsake-img {
+  height: 180px;
+  width: 180px;
+  object-fit: none;
+  display: inline-block;
+}
 </style>

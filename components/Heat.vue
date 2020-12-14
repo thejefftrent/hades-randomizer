@@ -1,9 +1,12 @@
 <template>
   <div>
     <h3>Pact Of Punishment</h3>
-    <b-form-input id="range-1" v-model="heatBudget" type="range" min="0" max="50"></b-form-input>
-    <div class="mt-2">Heat Amount: {{ heatBudget }}</div>
-    <HeatItem v-bind:heat-level="m.amount" v-bind:heat-name="m.name" v-for="m in heatItems" :key="heatItems.name"> </HeatItem>
+
+    <div class="mt-2">
+      <span>Heat: {{ heatBudget }}</span>
+      <b-form-input id="range-1" v-model="heatBudget" type="range" min="0" max="50"></b-form-input>
+    </div>
+    <HeatItem v-b-tooltip.hover :title="m.name + ': ' + m.amount" v-bind:heat-level="m.amount" v-bind:heat-name="m.name" v-for="m in heatItems" :key="heatItems.name"> </HeatItem>
   </div>
 </template>
 

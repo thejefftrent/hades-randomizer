@@ -1,7 +1,6 @@
 <template>
 <div style="display: inline-block">
-  <img class="keepsake-img"  :alt="`${keepsakeName}`" :src="require(`~/assets/Keepsakes/${keepsakeImg}`)"/>
-  <p>{{keepsakeName}}</p>
+  <img v-b-tooltip.hover :title="keepsakeName" class="keepsake-img"  :alt="`${keepsakeName}`" :src="require(`~/assets/Keepsakes/${keepsakeImg}`)"/>
 </div>
 </template>
 
@@ -17,9 +16,9 @@ name: "Keepsake",
 
 <style scoped>
 .keepsake-img {
-  height: 180px;
-  width: 180px;
-  object-fit: none;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
   display: inline-block;
 }
 </style>

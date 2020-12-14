@@ -1,7 +1,6 @@
 <template>
   <div style="display: inline-block">
-    <img :alt="`${companionName}`" :src="require(`~/assets/Companions/${companionImg}`)"/>
-    <p>{{companionName}}</p>
+    <img v-b-tooltip.hover :title="companionName" class="companion-img" :alt="`${companionName}`" :src="require(`~/assets/Companions/${companionImg}`)"/>
   </div>
 </template>
 
@@ -16,5 +15,10 @@ export default {
 </script>
 
 <style scoped>
-
+.companion-img {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  display: inline-block;
+}
 </style>

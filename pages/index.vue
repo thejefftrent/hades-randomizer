@@ -1,9 +1,9 @@
  <template>
   <div class="container">
     <div>
-      <h1 class="title">
+      <h3 class="title">
         Hades Randomizer
-      </h1>
+      </h3>
       <b-button size="sm" v-on:click="randomize(); ">randomize</b-button>
       <Weapon v-bind:aspectIndex="aspectIndex" v-bind:weaponIndex="weaponIndex" />
       <Items v-bind:item-rolls="itemRolls"/>
@@ -173,7 +173,7 @@ export default Vue.extend({
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 42px;
   color: #35495e;
   letter-spacing: 1px;
 }
